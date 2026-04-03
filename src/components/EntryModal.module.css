@@ -1,0 +1,83 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(45, 31, 15, 0.42);
+  z-index: 300;
+  display: flex;
+  align-items: flex-end;
+  animation: fadeIn 0.2s ease both;
+}
+@keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+
+.sheet {
+  background: var(--cream);
+  border-radius: 26px 26px 0 0;
+  padding: 28px 22px 52px;
+  width: 100%;
+  max-height: 84vh;
+  overflow-y: auto;
+  animation: slideUp 0.34s var(--spring) both;
+}
+@keyframes slideUp {
+  from { transform: translateY(100%) }
+  to   { transform: translateY(0) }
+}
+
+.handle {
+  width: 40px; height: 4px;
+  border-radius: 2px;
+  background: var(--border);
+  margin: 0 auto 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.emoji { font-size: 2.2rem; }
+.title { font-weight: 800; font-size: 1rem; }
+.date  { font-size: 0.73rem; color: var(--text-muted); margin-top: 1px; }
+
+.close {
+  background: var(--surface);
+  border: none;
+  border-radius: 50%;
+  width: 34px; height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  transition: background 0.15s, color 0.15s;
+  flex-shrink: 0;
+}
+.close:hover { background: var(--border); color: var(--text); }
+
+.adviceCard {
+  background: linear-gradient(145deg, #FFF9F2 0%, #F3EEFF 100%);
+  border: 1.5px solid rgba(196, 181, 232, 0.28);
+  border-radius: var(--radius);
+  padding: 22px 20px;
+  margin-bottom: 12px;
+}
+.adviceTag {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+.adviceBody {
+  font-size: 0.89rem;
+  line-height: 1.82;
+  color: var(--text);
+}
+.adviceBody p + p { margin-top: 12px; }

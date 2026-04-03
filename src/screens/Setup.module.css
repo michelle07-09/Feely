@@ -1,0 +1,49 @@
+.hero {
+  text-align: center;
+  padding: 52px 0 32px;
+}
+.icon { font-size: 3.2rem; display: block; margin-bottom: 12px; }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--mint-light);
+  border: 1.5px solid rgba(125,216,192,0.5);
+  padding: 5px 14px;
+  border-radius: 100px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: var(--mint-deep);
+  margin-top: 14px;
+}
+
+.sqlBlock {
+  position: relative;
+  background: #1E1B2E;
+  border-radius: var(--radius-sm);
+  padding: 16px 18px;
+  overflow-x: auto;
+}
+.sqlBlock pre {
+  font-family: 'Courier New', monospace;
+  font-size: 0.76rem;
+  line-height: 1.72;
+  color: #C4B5E8;
+  white-space: pre;
+}
+.copyBtn {
+  position: absolute;
+  top: 10px; right: 10px;
+  background: rgba(196,181,232,0.15);
+  border: 1px solid rgba(196,181,232,0.3);
+  border-radius: 6px;
+  color: #C4B5E8;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.copyBtn:hover { background: rgba(196,181,232,0.28); }

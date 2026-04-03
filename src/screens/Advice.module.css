@@ -1,0 +1,55 @@
+.loadingWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  text-align: center;
+  width: 100%;
+}
+.loadEmoji {
+  font-size: 2.8rem;
+  animation: bounceIn 0.55s var(--spring) both;
+}
+@keyframes bounceIn {
+  from { transform: scale(0.4); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+.top {
+  text-align: center;
+  padding: 40px 0 22px;
+}
+.emoji {
+  font-size: 3.2rem;
+  display: block;
+  margin-bottom: 8px;
+  animation: bounceIn 0.55s var(--spring) both;
+}
+
+.adviceCard {
+  background: linear-gradient(145deg, #FFF9F2 0%, #F3EEFF 100%);
+  border: 1.5px solid rgba(196, 181, 232, 0.28);
+  border-radius: var(--radius);
+  padding: 26px 22px;
+  margin-bottom: 14px;
+  animation: fadeUp 0.5s 0.1s var(--spring) both;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.adviceTag {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+}
+
+.adviceBody {
+  font-size: 0.93rem;
+  line-height: 1.84;
+  color: var(--text);
+}
+.adviceBody p + p { margin-top: 13px; }
